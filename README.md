@@ -10,6 +10,7 @@ wording. The author may `appeal` once, forcing a fresh consensus pass that can o
 The verb is **"judge content against a specific policy + appeal"** — the policy is an *input*, so the
 same engine enforces any ruleset, and removals are accountable (clause-cited, re-judgeable).
 
+- **Live demo:** https://policymoderate.pages.dev
 - **Contract (Bradbury, chain 4221):** `0x18FdaE70d8DB3F8ba15afFFA79806693AABfe980`
 - **Deployed from:** `rivale` (`0xc388…51A44`)
 - **Explorer:** https://explorer-bradbury.genlayer.com/contract/0x18FdaE70d8DB3F8ba15afFFA79806693AABfe980
