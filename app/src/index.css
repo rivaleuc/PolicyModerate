@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
-/* ----- PolicyModerate palette: amber rulebook + rose, near-black ----- */
+/* ----- PolicyModerate: clean light productivity, sans, LIGHT ----- */
 @theme {
-  --color-background: #0c0a07;
-  --color-surface: #151009;
-  --color-card: #1b140b;
-  --color-border: #38291a;
-  --color-foreground: #f5efe6;
-  --color-muted: #b39e83;
+  --color-background: #f5f6f8;
+  --color-surface: #ffffff;
+  --color-card: #ffffff;
+  --color-border: #e3e6ec;
+  --color-foreground: #1a1d24;
+  --color-muted: #6b7280;
 
-  --color-primary: #fbbf24;            /* amber-400 — policy / rulebook */
-  --color-primary-foreground: #1a1206;
-  --color-accent: #fb7185;             /* rose-400 — removals */
+  --color-primary: #b4540a;            /* burnt amber */
+  --color-primary-foreground: #ffffff;
+  --color-accent: #e11d48;             /* rose */
 
-  --color-true: #34d399;               /* allowed */
-  --color-false: #fb7185;              /* removed */
-  --color-unverifiable: #fbbf24;
-  --color-ring: #fbbf24;
+  --color-true: #16a34a;
+  --color-false: #e11d48;
+  --color-unverifiable: #b4540a;
+  --color-ring: #b4540a;
 
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(calc(-100% - var(--gap, 1rem))); } }
@@ -31,11 +31,6 @@
 @layer base {
   * { border-color: var(--color-border); }
   html { scroll-behavior: smooth; }
-  body {
-    background: var(--color-background);
-    color: var(--color-foreground);
-    font-family: var(--font-sans);
-    -webkit-font-smoothing: antialiased;
-  }
-  ::selection { background: color-mix(in oklab, var(--color-primary) 32%, transparent); }
+  body { background: var(--color-background); color: var(--color-foreground); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+  ::selection { background: color-mix(in oklab, var(--color-primary) 20%, transparent); }
 }
